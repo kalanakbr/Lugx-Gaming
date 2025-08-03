@@ -1,6 +1,6 @@
 # 2025 | CMM707 - Cloud Computing 
-# IIT : 20241754 | RGU : 2506651 
-# Lugx Gaming Microservices
+## IIT : 20241754 | RGU : 2506651 
+## Lugx Gaming Microservices
 
 Lugx Gaming is a cloud-native microservices-based system designed for managing gaming-related operations, including game listings, orders, and analytics.
 
