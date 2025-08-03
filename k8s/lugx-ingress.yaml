@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lugx-ingress
+  namespace: default
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: lugx.local
+      http:
+        paths:
+          - path: / #-> lugx-frontend-service:80
+            pathType: Prefix
+            backend:
+              service:
+                name: lugx-frontend-service # -> lugx-frontend-service:80
+                port:
+                  number: 80
+
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: game-service # -> game-service:8080
+                port:
+                  number: 8080
