@@ -41,4 +41,4 @@ spec:
               service:
                 name: analytics-service
                 port:
-                  number: 3002
+                  number: 3002 

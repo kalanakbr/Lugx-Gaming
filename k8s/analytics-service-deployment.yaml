@@ -53,6 +53,5 @@ spec:
     - name: http
       port: 3002
       targetPort: 3002
-      protocol: TCP
-      nodePort: 30814 
+      nodePort: 31012 
   

@@ -13,3 +13,214 @@ error: unable to listen on any of the requested ports: [{8080 8080}]
 error: unable to listen on any of the requested ports: [{3002 3002}]
 [2025-08-10 10:11:01] [1;33m🚀 Opening services in browser...[0m
 [2025-08-10 10:11:03] [0;32m✅ All services forwarded and opened![0m
+[2025-08-10 12:03:11] [1;33m🔌 Starting port forwarding for services...[0m
+[2025-08-10 12:03:11] [0;32m🎮 game-service forwarded to http://localhost:8080[0m
+[2025-08-10 12:03:11] [0;32m📦 order-service forwarded to http://localhost:3003[0m
+[2025-08-10 12:03:11] [0;32m📊 analytics-service forwarded to http://localhost:3002[0m
+[2025-08-10 12:03:11] [0;32m🌐 frontend forwarded to http://localhost:8081[0m
+Forwarding from 127.0.0.1:8081 -> 80
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from 127.0.0.1:3003 -> 3003
+Forwarding from 127.0.0.1:3002 -> 3002
+Forwarding from [::1]:3002 -> 3002
+Forwarding from [::1]:3003 -> 3003
+Forwarding from [::1]:8080 -> 8080
+Forwarding from [::1]:8081 -> 80
+[2025-08-10 12:03:14] [1;33m🚀 Opening services in browser...[0m
+Handling connection for 8080
+Handling connection for 3003
+Handling connection for 3002
+Handling connection for 8081
+[2025-08-10 12:03:15] [0;32m✅ All services forwarded and opened![0m
+Handling connection for 3003
+Handling connection for 8080
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 3003
+Handling connection for 3003
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+[2025-08-10 12:22:34] [1;33m🔌 Starting port forwarding for services...[0m
+[2025-08-10 12:22:34] [0;32m🎮 game-service forwarded to http://localhost:8080[0m
+[2025-08-10 12:22:34] [0;32m📦 order-service forwarded to http://localhost:3003[0m
+[2025-08-10 12:22:34] [0;32m📊 analytics-service forwarded to http://localhost:3002[0m
+[2025-08-10 12:22:34] [0;32m🌐 frontend forwarded to http://localhost:8081[0m
+Unable to listen on port 8080: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8080: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8080: bind: address already in use]
+Unable to listen on port 3003: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3003: bind: address already in use unable to create listener: Error listen tcp6 [::1]:3003: bind: address already in use]
+error: unable to listen on any of the requested ports: [{3003 3003}]
+error: unable to listen on any of the requested ports: [{8080 8080}]
+Unable to listen on port 3002: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3002: bind: address already in use unable to create listener: Error listen tcp6 [::1]:3002: bind: address already in use]
+error: unable to listen on any of the requested ports: [{3002 3002}]
+Unable to listen on port 8081: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8081: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8081: bind: address already in use]
+error: unable to listen on any of the requested ports: [{8081 80}]
+[2025-08-10 12:22:37] [1;33m🚀 Opening services in browser...[0m
+Handling connection for 3003
+Handling connection for 8080
+Handling connection for 3002
+[2025-08-10 12:22:39] [0;32m✅ All services forwarded and opened![0m
+Handling connection for 8081
+Handling connection for 3003
+Handling connection for 8080
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 3002
+E0810 12:24:24.835586   95940 portforward.go:424] "Unhandled Error" err="an error occurred forwarding 3002 -> 3002: error forwarding port 3002 to pod f0edf2f3fc77ec6259ba5a55931d9df53640ca82ecf91701b60f1481137de402, uid : Error response from daemon: No such container: f0edf2f3fc77ec6259ba5a55931d9df53640ca82ecf91701b60f1481137de402"
+E0810 12:24:24.835595   95940 portforward.go:424] "Unhandled Error" err="an error occurred forwarding 3002 -> 3002: error forwarding port 3002 to pod f0edf2f3fc77ec6259ba5a55931d9df53640ca82ecf91701b60f1481137de402, uid : Error response from daemon: No such container: f0edf2f3fc77ec6259ba5a55931d9df53640ca82ecf91701b60f1481137de402"
+error: lost connection to pod
+[2025-08-10 13:15:39] [1;33m🔌 Starting port forwarding for services...[0m
+[2025-08-10 13:15:40] [0;32m🎮 game-service forwarded to http://localhost:8080[0m
+[2025-08-10 13:15:40] [0;32m📦 order-service forwarded to http://localhost:3003[0m
+[2025-08-10 13:15:40] [0;32m📊 analytics-service forwarded to http://localhost:3002[0m
+[2025-08-10 13:15:40] [0;32m🌐 frontend forwarded to http://localhost:8081[0m
+Forwarding from 127.0.0.1:3002 -> 3002
+Forwarding from [::1]:3002 -> 3002
+Unable to listen on port 8080: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8080: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8080: bind: address already in use]
+Unable to listen on port 3003: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3003: bind: address already in use unable to create listener: Error listen tcp6 [::1]:3003: bind: address already in use]
+Unable to listen on port 8081: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8081: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8081: bind: address already in use]
+error: unable to listen on any of the requested ports: [{8080 8080}]
+error: unable to listen on any of the requested ports: [{3003 3003}]
+error: unable to listen on any of the requested ports: [{8081 80}]
+[2025-08-10 13:15:43] [1;33m🚀 Opening services in browser...[0m
+Handling connection for 3002
+Handling connection for 8080
+Handling connection for 3003
+[2025-08-10 13:15:43] [0;32m✅ All services forwarded and opened![0m
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 8080
+Handling connection for 3003
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+[2025-08-10 13:22:42] [1;33m🔌 Starting port forwarding for services...[0m
+[2025-08-10 13:22:42] [0;32m🎮 game-service forwarded to http://localhost:8080[0m
+[2025-08-10 13:22:42] [0;32m📦 order-service forwarded to http://localhost:3003[0m
+[2025-08-10 13:22:42] [0;32m📊 analytics-service forwarded to http://localhost:3002[0m
+[2025-08-10 13:22:42] [0;32m🌐 frontend forwarded to http://localhost:8081[0m
+[2025-08-10 13:22:45] [1;33m🚀 Opening services in browser...[0m
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 3003
+Handling connection for 3003
+Handling connection for 3002
+[2025-08-10 13:22:50] [0;32m✅ All services forwarded and opened![0m
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3002
+Unable to connect to the server: net/http: TLS handshake timeout
+Unable to connect to the server: net/http: TLS handshake timeout
+Unable to connect to the server: net/http: TLS handshake timeout
+Unable to connect to the server: net/http: TLS handshake timeout
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:23:19.981458   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
+E0810 13:23:19.988280   95937 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3003 -> 3003: Timeout occurred"
+E0810 13:23:19.981464   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
+E0810 13:23:19.981471   95937 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3003 -> 3003: Timeout occurred"
+Handling connection for 3003
+Handling connection for 8080
+E0810 13:23:21.113066    4323 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3002 -> 3002: Timeout occurred"
+E0810 13:23:21.114566   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
+E0810 13:23:21.116516   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
+E0810 13:23:21.759401    4323 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3002 -> 3002: Timeout occurred"
+Handling connection for 3002
+E0810 13:23:58.906935   95937 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3003 -> 3003: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:30:48.196979    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+E0810 13:30:48.196965    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:32:27.071859    4323 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3002 -> 3002: Timeout occurred"
+E0810 13:32:27.258536    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:33:09.453243    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:36:37.662901    4323 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3002 -> 3002: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:37:21.210106    4323 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3002 -> 3002: Timeout occurred"
+E0810 13:37:21.214417    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+E0810 13:37:52.362989    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+E0810 13:37:53.897342    4323 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3002 -> 3002: Timeout occurred"
+E0810 13:38:03.259010    4323 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3002 -> 3002: Timeout occurred"
+[2025-08-10 14:00:18] [1;33m🔌 Starting port forwarding for services...[0m
+[2025-08-10 14:00:18] [0;32m🎮 game-service forwarded to http://localhost:8080[0m
+[2025-08-10 14:00:18] [0;32m📦 order-service forwarded to http://localhost:3003[0m
+[2025-08-10 14:00:18] [0;32m📊 analytics-service forwarded to http://localhost:3002[0m
+[2025-08-10 14:00:18] [0;32m🌐 frontend forwarded to http://localhost:8081[0m
+Forwarding from 127.0.0.1:3002 -> 3002
+Unable to listen on port 8081: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8081: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8081: bind: address already in use]
+Unable to listen on port 8080: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8080: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8080: bind: address already in use]
+Unable to listen on port 3003: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3003: bind: address already in use unable to create listener: Error listen tcp6 [::1]:3003: bind: address already in use]
+Forwarding from [::1]:3002 -> 3002
+error: unable to listen on any of the requested ports: [{8080 8080}]
+error: unable to listen on any of the requested ports: [{8081 80}]
+error: unable to listen on any of the requested ports: [{3003 3003}]
+[2025-08-10 14:00:21] [1;33m🚀 Opening services in browser...[0m
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3003
+Handling connection for 3003
+Handling connection for 8080
+Handling connection for 8080
+[2025-08-10 14:00:22] [0;32m✅ All services forwarded and opened![0m
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8081
+E0810 14:00:52.450923   95937 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3003 -> 3003: Timeout occurred"
+E0810 14:00:52.450923   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:00:52.912878   95934 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:00:52.914313   95937 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3003 -> 3003: Timeout occurred"
+Handling connection for 3003
+Handling connection for 8080
+E0810 14:00:53.420601   95943 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8081 -> 80: Timeout occurred"
+E0810 14:00:58.485818   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
