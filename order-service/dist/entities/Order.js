@@ -15,21 +15,37 @@ let Order = class Order {
 };
 exports.Order = Order;
 __decorate([
-    (0, typeorm_1.PrimaryGeneratedColumn)(),
-    __metadata("design:type", Number)
+    (0, typeorm_1.PrimaryGeneratedColumn)('uuid'),
+    __metadata("design:type", String)
 ], Order.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)('jsonb'),
-    __metadata("design:type", Object)
-], Order.prototype, "items", void 0);
-__decorate([
-    (0, typeorm_1.Column)('decimal'),
-    __metadata("design:type", Number)
-], Order.prototype, "totalPrice", void 0);
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Order.prototype, "user_id", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Order.prototype, "product_id", void 0);
+__decorate([
+    (0, typeorm_1.Column)('int'),
+    __metadata("design:type", Number)
+], Order.prototype, "quantity", void 0);
+__decorate([
+    (0, typeorm_1.Column)('numeric'),
+    __metadata("design:type", Number)
+], Order.prototype, "price", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ default: 'pending' }),
+    __metadata("design:type", String)
+], Order.prototype, "status", void 0);
+__decorate([
+    (0, typeorm_1.CreateDateColumn)(),
     __metadata("design:type", Date)
-], Order.prototype, "createdAt", void 0);
+], Order.prototype, "created_at", void 0);
+__decorate([
+    (0, typeorm_1.UpdateDateColumn)(),
+    __metadata("design:type", Date)
+], Order.prototype, "updated_at", void 0);
 exports.Order = Order = __decorate([
     (0, typeorm_1.Entity)()
 ], Order);

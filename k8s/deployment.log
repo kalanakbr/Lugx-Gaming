@@ -1,0 +1,206 @@
+[2025-08-10 01:23:55] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:23:55] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:23:55] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres unchanged
+service/postgres unchanged
+Error from server (NotFound): deployments.apps "postgres-deployment" not found
+[2025-08-10 01:28:50] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:28:50] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:28:50] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:28:50] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service unchanged
+service/analytics-service unchanged
+Error from server (NotFound): deployments.apps "analytics-service-deployment" not found
+[2025-08-10 01:29:42] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:29:42] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:29:42] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:29:42] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+Waiting for deployment "analytics-service-deployment" rollout to finish: 0 of 1 updated replicas are available...
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:29:43] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend unchanged
+service/lugx-frontend-service unchanged
+Error from server (NotFound): deployments.apps "frontend-deployment" not found
+[2025-08-10 01:30:19] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:30:20] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:30:20] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:30:20] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:30:20] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+Error from server (NotFound): deployments.apps "frontend-deployment" not found
+[2025-08-10 01:32:20] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:32:20] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:32:20] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:32:20] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:32:21] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+Error from server (NotFound): deployments.apps "frontend-deployment" not found
+[2025-08-10 01:32:55] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:32:55] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:32:56] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:32:56] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:32:56] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+Error from server (NotFound): deployments.apps "frontend-deployment" not found
+[2025-08-10 01:34:19] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:34:19] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:34:19] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:34:19] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:34:19] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+Error from server (NotFound): deployments.apps "frontend-deployment" not found
+[2025-08-10 01:37:58] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:37:58] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:37:58] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:37:59] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:37:59] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+deployment "lugx-frontend-deployment" successfully rolled out
+[2025-08-10 01:37:59] [1;33m🎮 Deploying Game Service...[0m
+deployment.apps/game-service unchanged
+service/game-service unchanged
+Error from server (NotFound): deployments.apps "game-service-deployment" not found
+[2025-08-10 01:38:35] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:38:36] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:38:36] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:38:37] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:38:37] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+deployment "lugx-frontend-deployment" successfully rolled out
+[2025-08-10 01:38:37] [1;33m🎮 Deploying Game Service...[0m
+deployment.apps/game-service-deployment unchanged
+service/game-service unchanged
+Waiting for deployment "game-service-deployment" rollout to finish: 0 of 1 updated replicas are available...
+deployment "game-service-deployment" successfully rolled out
+[2025-08-10 01:38:46] [1;33m🛒 Deploying Order Service...[0m
+deployment.apps/order-service unchanged
+service/order-service unchanged
+Error from server (NotFound): deployments.apps "order-service-deployment" not found
+[2025-08-10 01:39:39] [1;33m🔐 Applying secrets...[0m
+secret/clickhouse-secret configured
+secret/game-service-secret unchanged
+secret/order-service-secret configured
+secret/postgres-secret unchanged
+[2025-08-10 01:39:39] [1;33m💾 Creating PersistentVolumeClaim for Postgres...[0m
+persistentvolumeclaim/postgres-pvc unchanged
+[2025-08-10 01:39:39] [1;33m🐘 Deploying PostgreSQL...[0m
+deployment.apps/postgres-deployment unchanged
+service/postgres unchanged
+deployment "postgres-deployment" successfully rolled out
+[2025-08-10 01:39:40] [1;33m📈 Deploying Analytics Service...[0m
+deployment.apps/analytics-service-deployment unchanged
+service/analytics-service unchanged
+deployment "analytics-service-deployment" successfully rolled out
+[2025-08-10 01:39:40] [1;33m🎨 Deploying Frontend...[0m
+deployment.apps/lugx-frontend-deployment unchanged
+service/lugx-frontend-service unchanged
+deployment "lugx-frontend-deployment" successfully rolled out
+[2025-08-10 01:39:41] [1;33m🎮 Deploying Game Service...[0m
+deployment.apps/game-service-deployment unchanged
+service/game-service unchanged
+deployment "game-service-deployment" successfully rolled out
+[2025-08-10 01:39:41] [1;33m🛒 Deploying Order Service...[0m
+deployment.apps/order-service-deployment unchanged
+service/order-service unchanged
+Waiting for deployment "order-service-deployment" rollout to finish: 0 of 1 updated replicas are available...
+deployment "order-service-deployment" successfully rolled out
+[2025-08-10 01:40:14] [1;33m🌐 Deploying Ingress...[0m
+ingress.networking.k8s.io/lugx-ingress unchanged
+[2025-08-10 01:40:15] [0;32m✅ Deployment complete![0m
+[2025-08-10 01:40:15] [1;33m🔌 Starting Minikube tunnel (may require sudo)...[0m
+[2025-08-10 01:40:20] [1;33m🌐 Checking and opening services...[0m

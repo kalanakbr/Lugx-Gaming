@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: analytics-service
+  name: analytics-service-deployment
 spec:
   replicas: 1
   selector:
@@ -27,7 +27,10 @@ spec:
               cpu: "500m"
           env:
             - name: CLICKHOUSE_URL
-              value: "https://de3td20bxj.ap-south-1.aws.clickhouse.cloud:8443"
+              valueFrom:
+                secretKeyRef:
+                  name: clickhouse-secret
+                  key: CLICKHOUSE_URL
             - name: CLICKHOUSE_USER
               value: default
             - name: CLICKHOUSE_PASSWORD
@@ -37,3 +40,19 @@ spec:
                   key: CLICKHOUSE_PASSWORD
             - name: CLICKHOUSE_DB
               value: Lugx
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: analytics-service
+spec:
+  type: NodePort
+  selector:
+    app: analytics-service
+  ports:
+    - name: http
+      port: 3002
+      targetPort: 3002
+      protocol: TCP
+      nodePort: 30814 
+  

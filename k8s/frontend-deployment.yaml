@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lugx-frontend
+  name: lugx-frontend-deployment
 spec:
   replicas: 2
   selector:
@@ -9,6 +9,7 @@ spec:
       app: lugx-frontend
   template:
     metadata:
+      name: lugx-frontend
       labels:
         app: lugx-frontend
     spec:
@@ -35,7 +36,7 @@ spec:
   selector:
     app: lugx-frontend
   ports:
-    - port: 80
+    - name: http
+      port: 80
       targetPort: 80
-      nodePort: 30007  
-      # Optional fixed port for easy access
+      protocol: TCP

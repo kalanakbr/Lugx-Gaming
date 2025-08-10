@@ -7,8 +7,20 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-app.use(orderRoutes);
+// Mount order routes
+app.use("/api/order", orderRoutes);
 
-app.get('/', (_req, res) => res.send('Order Service is running'));
+// Health check endpoint for Kubernetes probes
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
+// Root endpoint
+app.get('/', (req, res) => {
+  res.status(200).send('Order Service is running');
+});
+
+console.log("Order routes registered at /api/order");
 
 export default app;
+

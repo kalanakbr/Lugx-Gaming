@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: game-service
+  name: game-service-deployment
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
       containers:
         - name: game-service
           image: 1754iitmbda/game-service:latest
-          imagePullPolicy: Never # Change to IfNotPresent or Always in production
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           resources:
@@ -40,7 +40,6 @@ spec:
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 30
-
 ---
 apiVersion: v1
 kind: Service
@@ -51,6 +50,9 @@ spec:
   selector:
     app: game-service
   ports:
-    - port: 8080            # Internal cluster port
-      targetPort: 8080      # Container's port
-      nodePort: 30080       # Exposed on host at this port (optional)
+    - name: http
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
+      nodePort: 32025  
+

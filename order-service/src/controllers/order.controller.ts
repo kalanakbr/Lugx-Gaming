@@ -3,12 +3,22 @@ import { OrderService } from '../services/order.service';
 
 export class OrderController {
   static async createOrder(req: Request, res: Response) {
-    const result = await OrderService.createOrder(req.body);
-    res.json(result);
+    try {
+      const result = await OrderService.createOrder(req.body);
+      res.status(201).json(result);
+    } catch (error) {
+      console.error('Error creating order:', error);
+      res.status(500).json({ error: 'Failed to create order' });
+    }
   }
 
   static async getAllOrders(_req: Request, res: Response) {
-    const orders = await OrderService.getAllOrders();
-    res.json(orders);
+    try {
+      const orders = await OrderService.getAllOrders();
+      res.status(200).json(orders);
+    } catch (error) {
+      console.error('Error fetching orders:', error);
+      res.status(500).json({ error: 'Failed to fetch orders' });
+    }
   }
 }

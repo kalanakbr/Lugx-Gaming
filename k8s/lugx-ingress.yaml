@@ -3,24 +3,42 @@ kind: Ingress
 metadata:
   name: lugx-ingress
   namespace: default
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
     - host: lugx.local
       http:
         paths:
-          - path: / #-> lugx-frontend-service:80
+          - path: /
             pathType: Prefix
             backend:
               service:
-                name: lugx-frontend-service # -> lugx-frontend-service:80
+                name: lugx-frontend-service
                 port:
                   number: 80
 
-          - path: /api
+          - path: /api/game
             pathType: Prefix
             backend:
               service:
-                name: game-service # -> game-service:8080
+                name: game-service
                 port:
                   number: 8080
+
+          - path: /api/order
+            pathType: Prefix
+            backend:
+              service:
+                name: order-service
+                port:
+                  number: 3003
+
+          - path: /analytics
+            pathType: Prefix
+            backend:
+              service:
+                name: analytics-service
+                port:
+                  number: 3002

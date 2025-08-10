@@ -1,0 +1,15 @@
+[2025-08-10 10:10:58] [1;33m🔌 Starting port forwarding for services...[0m
+[2025-08-10 10:10:58] [0;32m🎮 game-service forwarded to http://localhost:8080[0m
+[2025-08-10 10:10:58] [0;32m📦 order-service forwarded to http://localhost:3003[0m
+[2025-08-10 10:10:58] [0;32m📊 analytics-service forwarded to http://localhost:3002[0m
+[2025-08-10 10:10:58] [0;32m🌐 frontend forwarded to http://localhost:8081[0m
+Unable to listen on port 3003: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3003: bind: address already in use unable to create listener: Error listen tcp6 [::1]:3003: bind: address already in use]
+Unable to listen on port 8080: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8080: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8080: bind: address already in use]
+Unable to listen on port 8081: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8081: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8081: bind: address already in use]
+error: unable to listen on any of the requested ports: [{3003 3003}]
+Unable to listen on port 3002: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3002: bind: address already in use unable to create listener: Error listen tcp6 [::1]:3002: bind: address already in use]
+error: unable to listen on any of the requested ports: [{8081 80}]
+error: unable to listen on any of the requested ports: [{8080 8080}]
+error: unable to listen on any of the requested ports: [{3002 3002}]
+[2025-08-10 10:11:01] [1;33m🚀 Opening services in browser...[0m
+[2025-08-10 10:11:03] [0;32m✅ All services forwarded and opened![0m
