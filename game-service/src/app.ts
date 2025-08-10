@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 
-console.log("Routes registered at /api/game");
+console.log("Game routes registered at /api/game");
 
 export default app;
 
