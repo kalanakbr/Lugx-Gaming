@@ -69,10 +69,10 @@ app.post('/track', async (req, res) => {
     y: y !== undefined ? Number(y) : null,
   };
 
-  console.log('📥 Event received:', event);
+  console.log('^^^^^^ Event received:', event);
 
   try {
-    console.log('👉 Inserting event into ClickHouse...');
+    console.log('-> Inserting event into ClickHouse...');
     await clickhouse.insert({
       table: 'events',
       values: [event],

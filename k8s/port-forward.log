@@ -278,3 +278,11 @@ E0810 14:10:03.695099   95937 portforward.go:357] "Unhandled Error" err="error c
 E0810 14:10:06.070844   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
 E0810 14:10:06.074974   95934 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8080 -> 8080: Timeout occurred"
 Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3002
