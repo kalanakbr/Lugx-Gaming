@@ -19,20 +19,20 @@ declare global {
   }
 }
 
-// 🔧 Setup ClickHouse client
+// Setup ClickHouse client
 const clickhouse = createClient({
   url: process.env.CLICKHOUSE_URL || 'http://localhost:8123',
   username: process.env.CLICKHOUSE_USER || 'default',
   password: process.env.CLICKHOUSE_PASSWORD || '',
-  database: process.env.CLICKHOUSE_DB || 'default',
+  database: process.env.CLICKHOUSE_DB || 'Lugx',
 });
 
-// 🩺 Health check
+// Health check
 app.get('/', (_, res) => {
-  res.send('✅ Analytics service is up');
+  res.send('>>>>>>> Analytics service is up <<<<<<<<');
 });
 
-// 📊 Track analytics event
+// Track analytics event
 app.post('/track', async (req, res) => {
   const {
     eventType = 'page_view',
@@ -79,16 +79,16 @@ app.post('/track', async (req, res) => {
       format: 'JSONEachRow',
     });
 
-    console.log('✅ Event inserted into ClickHouse');
+    console.log('>>>>>>> Event inserted into ClickHouse <<<<<<<<<<');
     res.status(200).send('Event recorded');
   } catch (error: any) {
-    console.error('❌ Insert failed:', error.message || error);
+    console.error(' XXXXXXXXXXX Insert failed:', error.message || error);
     res.status(500).send('Failed to record event');
   }
 });
 
-// 🚀 Start server
+// Start server
 const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
-  console.log(`🚀 Analytics service running on port ${PORT}`);
+  console.log(` /////// Analytics service running on port /////// ${PORT}`);
 });

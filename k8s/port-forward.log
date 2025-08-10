@@ -224,3 +224,57 @@ Handling connection for 3003
 Handling connection for 8080
 E0810 14:00:53.420601   95943 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8081 -> 80: Timeout occurred"
 E0810 14:00:58.485818   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 3003
+Handling connection for 3003
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+Handling connection for 3003
+Handling connection for 3003
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 3002
+Handling connection for 3002
+Handling connection for 8081
+Handling connection for 8081
+E0810 14:09:32.273215   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
+E0810 14:09:32.290305   95943 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8081 -> 80: Timeout occurred"
+Handling connection for 3003
+Handling connection for 3003
+E0810 14:09:33.977367   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:09:34.013026   95934 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:09:34.457497   95943 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8081 -> 80: Timeout occurred"
+E0810 14:09:35.608725   95937 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3003 -> 3003: Timeout occurred"
+E0810 14:09:35.620926   95937 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3003 -> 3003: Timeout occurred"
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 3002
+Handling connection for 3002
+E0810 14:09:39.449409   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
+E0810 14:09:45.486989   95934 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:09:49.127152   95943 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8081 -> 80: Timeout occurred"
+E0810 14:09:49.138115   95943 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8081 -> 80: Timeout occurred"
+E0810 14:09:55.790972   95937 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 3003 -> 3003: Timeout occurred"
+E0810 14:09:58.772977   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:10:02.147066   95943 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8081 -> 80: Timeout occurred"
+E0810 14:10:03.695099   95937 portforward.go:357] "Unhandled Error" err="error creating error stream for port 3003 -> 3003: Timeout occurred"
+E0810 14:10:06.070844   95934 portforward.go:357] "Unhandled Error" err="error creating error stream for port 8080 -> 8080: Timeout occurred"
+E0810 14:10:06.074974   95934 portforward.go:380] "Unhandled Error" err="error creating forwarding stream for port 8080 -> 8080: Timeout occurred"
+Handling connection for 3002

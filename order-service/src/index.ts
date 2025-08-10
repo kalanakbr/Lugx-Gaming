@@ -31,12 +31,12 @@ async function createDatabaseIfNotExists() {
 
     if (res.rowCount === 0) {
       await client.query(`CREATE DATABASE ${dbName}`);
-      console.log(`✅ Database "${dbName}" created.`);
+      console.log(`\\\\ Database "${dbName}" created.////`);
     } else {
-      console.log(`ℹ️ Database "${dbName}" already exists.`);
+      console.log(`!!!!!!!Database "${dbName}" already exists. !!!!!!!!`);
     }
   } catch (err) {
-    console.error('❌ Error checking or creating database:', err);
+    console.error('XXXXXXXX Error checking or creating database:', err);
     throw err;
   } finally {
     await client.end();
@@ -48,16 +48,16 @@ async function startServer() {
     await createDatabaseIfNotExists();
 
     await AppDataSource.initialize();
-    console.log('✅ Connected to PostgreSQL');
+    console.log(' >>>>>>>>>> Connected to PostgreSQL <<<<<<<<<<');
 
     app.listen(PORT,'0.0.0.0',() => {
-      console.log(`🚀 Order service running at http://0.0.0.0:${PORT}`);
+      console.log(`\\\\\ Order service running at http://0.0.0.0:${PORT} /////`);
     });
   } catch (err) {
     if (err instanceof Error) {
-      console.error('❌ DB connection failed or server startup failed', err.stack || err.message);
+      console.error(' XXXXXXXX DB connection failed or server startup failed', err.stack || err.message);
     } else {
-      console.error('❌ DB connection failed or server startup failed', err);
+      console.error('XXXXXXX DB connection failed or server startup failed', err);
     }
     process.exit(1);
   }

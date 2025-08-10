@@ -9,7 +9,7 @@ if (!process.env.DATABASE_URL) {
 }
 
 // Debug log to verify DATABASE_URL is set correctly
-console.log("📦 DATABASE_URL:", process.env.DATABASE_URL);
+console.log("[] DATABASE_URL:", process.env.DATABASE_URL);
 console.log("Database URL:", process.env.DATABASE_URL);
 
 
