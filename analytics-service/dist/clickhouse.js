@@ -1,23 +1,18 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
-const client_1 = require("@clickhouse/client");
-const dotenv_1 = __importDefault(require("dotenv"));
-const request_ip_1 = __importDefault(require("request-ip"));
-const uuid_1 = require("uuid");
-dotenv_1.default.config();
+import express from 'express';
+import { createClient } from '@clickhouse/client';
+import dotenv from 'dotenv';
+import requestIp from 'request-ip';
+import { v4 as uuidv4 } from 'uuid';
+dotenv.config();
 // 🔍 Log environment variables to verify they're loaded correctly
 console.log('🔗 ClickHouse URL:', process.env.CLICKHOUSE_URL);
 console.log('👤 ClickHouse User:', process.env.CLICKHOUSE_USER);
 console.log('🗄️ ClickHouse DB:', process.env.CLICKHOUSE_DB);
-const app = (0, express_1.default)();
-app.use(express_1.default.json());
-app.use(request_ip_1.default.mw());
+const app = express();
+app.use(express.json());
+app.use(requestIp.mw());
 // Setup ClickHouse client
-const clickhouse = (0, client_1.createClient)({
+const clickhouse = createClient({
     url: process.env.CLICKHOUSE_URL,
     username: process.env.CLICKHOUSE_USER,
     password: process.env.CLICKHOUSE_PASSWORD,
@@ -31,9 +26,9 @@ app.get('/', (req, res) => {
 app.post('/track', async (req, res) => {
     const { eventType = 'page_view', page, timestamp, userAgent, session_id, scroll_percent, duration_ms, element_tag, element_id, element_classes, x, y, } = req.body;
     const ip = req.clientIp || req.ip || 'unknown';
-    const session = session_id || (0, uuid_1.v4)();
+    const session = session_id || uuidv4();
     const event = {
-        id: (0, uuid_1.v4)(),
+        id: uuidv4(),
         eventType,
         pageUrl: page,
         timestamp: timestamp || new Date().toISOString(),
