@@ -9,7 +9,7 @@ services:
     volumes:
       - clickhouse-data:/var/lib/clickhouse
     environment:
-      - CLICKHOUSE_DB=analytics
+      - CLICKHOUSE_DB=Lugx
 
 volumes:
   clickhouse-data:

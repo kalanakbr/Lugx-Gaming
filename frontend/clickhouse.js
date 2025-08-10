@@ -8,7 +8,7 @@
 
   // Helper to send analytics event
   function sendEvent(eventType, additionalData = {}) {
-    fetch('http://localhost:3002/analytics/track', {
+    fetch('http://localhost:3002/track', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
